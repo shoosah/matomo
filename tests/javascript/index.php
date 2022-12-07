@@ -78,6 +78,7 @@ function testCallingTrackPageViewBeforeSetTrackerUrlWorks() {
     _paq.push(["setCustomData", { "token" : getToken() }]);
     _paq.push(["trackPageView", "Asynchronous Tracker ONE"]);
     _paq.push(["setSiteId", 1]);
+    _paq.push(["enableFileTracking"]);
     _paq.push(["setTrackerUrl", "matomo.php"]);
 }
 
