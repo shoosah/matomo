@@ -36,7 +36,7 @@ class Password
                 return PASSWORD_ARGON2I;
             case "argon2id":
                 if (version_compare(PHP_VERSION, '7.3.0', '<')) {
-                    throw new Exception("argon2id needs at leat PHP 7.3.0");
+                    throw new Exception("argon2id needs at least PHP 7.3.0");
                 }
                 return PASSWORD_ARGON2ID;
             default:
