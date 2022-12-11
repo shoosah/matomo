@@ -115,6 +115,15 @@ class WidgetTest extends SystemTestCase
     {
         return array(
             array (
+                'name' => 'Current Local Time',
+                'uniqueId' => 'widgetLivegetCurrentLocalTime',
+                'parameters' =>
+                    array (
+                        'module' => 'Live',
+                        'action' => 'getCurrentLocalTime',
+                    ),
+            ),
+            array (
                 'name' => 'Visits Overview (with graph)',
                 'uniqueId' => 'widgetVisitOverviewWithGraph',
                 'parameters' =>

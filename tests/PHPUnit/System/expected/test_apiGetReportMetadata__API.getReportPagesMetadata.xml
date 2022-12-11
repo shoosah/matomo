@@ -943,6 +943,18 @@
 		</subcategory>
 		<widgets>
 			<row>
+				<name>Current Local Time</name>
+				<module>Live</module>
+				<action>getCurrentLocalTime</action>
+				<order>99</order>
+				<parameters>
+					<module>Live</module>
+					<action>getCurrentLocalTime</action>
+				</parameters>
+				<uniqueId>widgetLivegetCurrentLocalTime</uniqueId>
+				<isWide>0</isWide>
+			</row>
+			<row>
 				<name>Visits Over Time</name>
 				<module>VisitsSummary</module>
 				<action>getEvolutionGraph</action>

@@ -919,6 +919,12 @@ describe("UIIntegrationTest", function () { // TODO: Rename to Piwik?
             await visitors.click();
             await page.waitForTimeout(100);
 
+            // TODO: Update this part of the test given current local time widget is added under dashboard
+            // visitors = await page.jQuery('.widgetpreview-categorylist>li:contains(Current Local Time):first');
+            // await visitors.hover();
+            // await visitors.click();
+            // await page.waitForTimeout(100);
+
             visitorsOT = await page.jQuery('.widgetpreview-widgetlist li:contains(Visits Over Time)');
             await visitorsOT.hover();
             await visitorsOT.click();

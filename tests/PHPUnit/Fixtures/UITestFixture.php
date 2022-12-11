@@ -405,6 +405,7 @@ class UITestFixture extends SqlDump
                 || $widget['uniqueId'] == 'widgetLivegetVisitorProfilePopup'
                 || $widget['uniqueId'] == 'widgetActionsgetPageTitles'
                 || $widget['uniqueId'] == 'widgetCoreHomequickLinks'
+                || $widget['uniqueId'] == 'widgetLivegetCurrentLocalTime'
                 || strpos($widget['uniqueId'], 'widgetExample') === 0
             ) {
                 continue;

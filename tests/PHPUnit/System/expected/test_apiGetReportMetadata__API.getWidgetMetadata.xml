@@ -147,6 +147,31 @@
 		</widgets>
 	</row>
 	<row>
+		<name>Current Local Time</name>
+		<category>
+			<id>General_Visitors</id>
+			<name>Visitors</name>
+			<order>5</order>
+			<icon>icon-reporting-visitors</icon>
+			<help>&lt;p&gt;The Visitors pages tell you things about who your visitors are. Things like where your visitors came from, what devices and browsers they're using and when they generally visit your website. Understand, in the aggregate, who your audience is, and look for outliers to see how your audience could grow.&lt;/p&gt;&lt;p&gt;In addition to general information about your visitors, you can also use the &lt;a href=&quot;#&quot; onclick=&quot;this.href=broadcast.buildReportingUrl('category=General_Visitors&amp;subcategory=Live_VisitorLog')&quot;&gt;Visits Log&lt;/a&gt; to see what occurred in every individual visit.&lt;/p&gt;</help>
+		</category>
+		<subcategory>
+			<id>General_Overview</id>
+			<name>Overview</name>
+			<order>2</order>
+			<help>&lt;p&gt;The Visitors Overview helps you understand the popularity of your site. It does this by providing charts that show how many visits your site is receiving over a selected period and the average level of engagement for key features, such as searches and downloads.&lt;/p&gt;</help>
+		</subcategory>
+		<module>Live</module>
+		<action>getCurrentLocalTime</action>
+		<order>99</order>
+		<parameters>
+			<module>Live</module>
+			<action>getCurrentLocalTime</action>
+		</parameters>
+		<uniqueId>widgetLivegetCurrentLocalTime</uniqueId>
+		<isWide>0</isWide>
+	</row>
+	<row>
 		<name>Visits Over Time</name>
 		<category>
 			<id>General_Visitors</id>
